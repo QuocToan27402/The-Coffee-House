@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@drawable/category_background"
+    android:padding="8dp"
+    android:layout_margin="12dp">
+
+    <ImageView
+        android:id="@+id/imageViewCate"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginStart="6dp"
+        android:layout_weight="1"
+        app:srcCompat="@drawable/icon_cate_milktea" />
+
+    <TextView
+        android:id="@+id/txtCateName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:layout_marginEnd="10dp"
+        android:text="Milk Tea"
+        android:textColor="#562B1A"
+        android:textSize="16dp"
+        android:textStyle="bold" />
+</LinearLayout>

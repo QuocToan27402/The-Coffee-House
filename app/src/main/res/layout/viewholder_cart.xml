@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="10dp"
+    android:layout_margin="10dp"
+    android:background="@drawable/bg_item_cart">
+
+
+    <ImageView
+        android:id="@+id/imageCartItem"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/capheden" />
+
+    <TextView
+        android:id="@+id/txtNameFoodCart"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="16dp"
+        android:text="Cà phê sữa"
+        android:textSize="24dp"
+        app:layout_constraintStart_toEndOf="@+id/imageCartItem"
+        app:layout_constraintTop_toTopOf="@+id/imageCartItem" />
+
+    <TextView
+        android:id="@+id/txtPriceFoodCart"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="18.000 đ"
+        android:textSize="16dp"
+        app:layout_constraintStart_toStartOf="@+id/txtNameFoodCart"
+        app:layout_constraintTop_toBottomOf="@+id/txtNameFoodCart" />
+
+    <ImageView
+        android:id="@+id/btnDeleteCart"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="0dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.899"
+        app:layout_constraintStart_toEndOf="@+id/txtNameFoodCart"
+        app:layout_constraintTop_toTopOf="@+id/txtNameFoodCart"
+        app:srcCompat="@drawable/icon_delete" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginEnd="20dp"
+        android:padding="5dp"
+        android:background="@drawable/background_quantity"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="@+id/imageCartItem"
+        app:layout_constraintEnd_toEndOf="@+id/btnDeleteCart"
+        app:layout_constraintTop_toBottomOf="@+id/btnDeleteCart"
+        app:layout_constraintVertical_bias="1.0">
+
+        <TextView
+            android:id="@+id/minus_btn"
+            android:textSize="16sp"
+            android:text="-"
+            android:layout_width="30dp"
+            android:gravity="center"
+            android:layout_height="wrap_content"/>
+        <TextView
+            android:id="@+id/quantity_tv"
+            android:textSize="16sp"
+            android:text="1"
+            android:gravity="center"
+            android:layout_width="30dp"
+            android:layout_height="wrap_content"/>
+        <TextView
+            android:id="@+id/plus_btn"
+            android:textSize="16sp"
+            android:text="+"
+            android:gravity="center"
+            android:layout_width="30dp"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
