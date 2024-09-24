@@ -59,6 +59,7 @@ public class CartActivity extends AppCompatActivity {
 
 
         bottomNav();
+        
     }
 
     private void onClickListener(){
